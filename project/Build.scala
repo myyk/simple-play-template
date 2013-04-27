@@ -8,10 +8,13 @@ object ApplicationBuild extends Build {
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
-    // Add your project dependencies here,
+    // Add your project dependencies here
     jdbc,
     anorm,
-    "com.github.twitter" % "bootstrap" % "2.0.2"
+    "com.github.twitter" % "bootstrap" % "2.0.2",
+
+    // Add your test dependencies here
+    "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
   )
 
 
